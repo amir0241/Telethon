@@ -8,7 +8,7 @@ from ...utils import snake_to_camel_case
 WHITELISTED_MISMATCHING_IDS = {
     # 0 represents any layer
     0: {'channel',  # Since layer 77, there seems to be no going back...
-        'ipPortSecret', 'accessPointRule', 'help.configSimple'}
+        'ipPortSecret', 'accessPointRule', 'help.configSimple', 'codeSettings'}
 }
 
 
@@ -50,7 +50,7 @@ class TLObject:
 
             if self.fullname not in whitelist:
                 assert self.id == self.infer_id(),\
-                    f'Invalid inferred ID for ({self.id} != {self.infer_id()})' + repr(self)
+                    f'Invalid inferred ID for ({self.id} != {self.infer_id()}) ' + repr(self)
 
         self.class_name = snake_to_camel_case(
             self.name, suffix='Request' if self.is_function else '')
