@@ -1808,6 +1808,7 @@ account.registerDevice#ec86017a flags:# no_muted:flags.0?true token_type:int tok
 account.unregisterDevice#6a0d3206 token_type:int token:string other_uids:Vector<long> = Bool;
 account.updateNotifySettings#84be5b93 peer:InputNotifyPeer settings:InputPeerNotifySettings = Bool;
 account.getNotifySettings#12b3ad31 peer:InputNotifyPeer = PeerNotifySettings;
+account.getReactionsNotifySettings#6dd654c = PeerNotifySettings;
 account.resetNotifySettings#db7e1747 = Bool;
 account.updateProfile#78515775 flags:# first_name:flags.0?string last_name:flags.1?string about:flags.2?string = User;
 account.updateStatus#6628562c offline:Bool = Bool;

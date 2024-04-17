@@ -8,7 +8,7 @@ from ...utils import snake_to_camel_case
 WHITELISTED_MISMATCHING_IDS = {
     # 0 represents any layer
     0: {'channel',  # Since layer 77, there seems to be no going back...
-        'ipPortSecret', 'accessPointRule', 'help.configSimple', 'codeSettings'}
+        'ipPortSecret', 'accessPointRule', 'help.configSimple', 'codeSettings', "account.getReactionsNotifySettings"}
 }
 
 
