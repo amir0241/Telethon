@@ -16,7 +16,7 @@ class TypeNotFoundError(Exception):
     Occurs when a type is not found, for example,
     when trying to read a TLObject with an invalid constructor code.
     """
-    def __init__(self, invalid_constructor_id, remaining):
+    def __init__(self, invalid_constructor_id, remaining=-1):
         super().__init__(
             'Could not find a matching Constructor ID for the TLObject '
             'that was supposed to be read with ID {:08x}. See the FAQ '
